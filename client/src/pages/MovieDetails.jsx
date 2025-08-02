@@ -6,6 +6,7 @@ import { Heart, PlayCircle, StarIcon } from "lucide-react";
 import timeFormat from '../library/timeFormat';
 import BlurCircle from '../components/BlurCircle';
 import MovieCard from '../components/MovieCard';
+import DateSelection from '../components/DateSelection';
 
 
 const MovieDetails = () => {
@@ -75,6 +76,8 @@ const MovieDetails = () => {
           ))}
         </div>
       </div>
+
+      <DateSelection dateTime={show.dateTime} id={id} />
 
        <p className="text-lg font-medium mt-20 mb-8">You May Also Like</p>
       <div className="flex flex-wrap max-sm:justify-center gap-8">
